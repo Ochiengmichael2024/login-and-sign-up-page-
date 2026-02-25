@@ -10,6 +10,7 @@ body{
  align-items: center;
  min-height: 100vh;
  background: #be2edd;
+ overflow: hidden;
 
 }
 .wrapper{
@@ -28,6 +29,19 @@ height: 500px;
  height: 100%;
  background:#fff ;
  z-index: 2;
+ transition: transform .5s ease-in-out,left .5s ease-in-out;
+}
+.wrapper.show-sign .form-wrapper .sign-in{
+ left: -850px;
+ transition-delay:0s ;
+}
+.wrapper .form-wrapper .sign-up{
+ transform: translateX(850px);
+ transition-delay:0s ;
+}
+.wrapper.show-sign .form-wrapper .sign-up{
+ transform: translateX(0);
+
 }
 h2{
  font-size: 30px;
