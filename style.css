@@ -60,6 +60,7 @@ h2{
  border: 1px solid #333;
  outline: none;
  border-radius: 5px;
+ transition: .5s;
 }
 .input-group input:focus~label,
 .input-group input:valid~label{
@@ -67,9 +68,12 @@ h2{
  font-size: 12px;
  background:#fff ;
  color: #be2edd;
-
-
 }
+.input-group input:focus,
+.input-group input:valid{
+border: 1px solid #be2edd;
+}
+
 .remember{
  margin: -15px 0 15px;
 
