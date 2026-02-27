@@ -17,11 +17,11 @@ body{
 position: relative;
 width: 400px;
 height: 500px;
+overflow: hidden;
 }
 .form-wrapper{
  position: absolute;
  top: 0;
- left: 0;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -31,8 +31,15 @@ height: 500px;
  z-index: 2;
  transition: transform .5s ease-in-out,left .5s ease-in-out;
 }
-.wrapper.show-sign .form-wrapper .sign-in{
- transform:translateX(-850px) ;
+.sign-in {
+  transform: translateX(0);
+}
+
+.sign-up {
+  transform: translateX(100%);
+}
+.wrapper.show-sign  .sign-in{
+ transform:translateX(-100%) ;
  transition-delay:0s ;
 }
 .wrapper .form-wrapper .sign-up{
