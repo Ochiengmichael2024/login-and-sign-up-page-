@@ -33,22 +33,25 @@ overflow: hidden;
 }
 .sign-in {
   transform: translateX(0);
+  z-index: 2;
 }
 
 .sign-up {
   transform: translateX(100%);
+  z-index: 1;
 }
 .wrapper.show-sign  .sign-in{
  transform:translateX(-100%) ;
+ z-index: 1;
  transition-delay:0s ;
 }
 .wrapper .form-wrapper .sign-up{
  transform: translateX(850px);
  transition-delay:0s ;
 }
-.wrapper.show-sign .form-wrapper .sign-up{
+.wrapper.show-sign  .sign-up{
  transform: translateX(0);
-
+ z-index: 2;
 }
 h2{
  font-size: 30px;
